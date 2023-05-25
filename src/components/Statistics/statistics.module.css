@@ -1,0 +1,24 @@
+body{
+    padding: 50px;
+}
+ul{
+    padding: 0;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    align-items: center;
+}
+.title{
+
+}
+.button{
+    margin-right: 10px;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+}
