@@ -21,5 +21,9 @@ function Statistics({ good, neutral, bad, total, percentage }) {
 export default Statistics;
 
 Statistics.propTypes = {
-    good: PropTypes.number.isRequired
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    percentage: PropTypes.number.isRequired,
 }
