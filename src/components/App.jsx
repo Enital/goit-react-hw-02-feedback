@@ -4,6 +4,8 @@ import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
 import Section from './Section/Section'
 import Notification from './Notification/Notification'
 
+import css from './app.module.css'
+
 class App extends React.Component {
 
   state = {
@@ -33,7 +35,7 @@ class App extends React.Component {
     const positiveReview = this.countPositiveFeedbackPercentage(total);
 
     return (
-      <>
+      <div className={css.container}>
         <Section title="Please leave feedback">
           <FeedbackOptions onLeaveFeedback={this.addReview} />
         </Section>
@@ -51,7 +53,7 @@ class App extends React.Component {
         ) : (
             <Notification message="There is no feedback"/>
         )}
-      </>
+      </div>
     )
   };
 };
